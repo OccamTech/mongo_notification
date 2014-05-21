@@ -1,0 +1,10 @@
+{application,mongo_notification,
+             [{description,"Use to send APNS and GCM Messages to Mongo User"},
+              {vsn,"1.0.0"},
+              {modules,[mongo_apns,mongo_gcm,mongo_notification,
+                        mongo_notification_app,mongo_notification_sup,
+                        mongo_server,mongo_wall_notification]},
+              {registered,[mongo_notification_sup]},
+              {applications,[kernel,stdlib,eredis,mochiweb]},
+              {mod,{mongo_notification_app,[]}},
+              {env,[]}]}.
