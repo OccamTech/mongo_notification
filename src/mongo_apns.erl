@@ -78,8 +78,8 @@ send_push(Socket, DdeviceToken, Payload) ->
 push(DdeviceToken, Payload) ->
 	Address = "gateway.sandbox.push.apple.com",
   	Port = 2195,
-  	Cert = "/Users/nitinkapoor/Android/workspace/mongo_erl/mongo_notification/priv/apns-cert.pem",
-  	Key = "/Users/nitinkapoor/Android/workspace/mongo_erl/mongo_notification/priv/apns-key.pem",
+  	Cert = "/home/deploy/mongo_erl/mongo_notification/priv/apns-cert.pem",
+  	Key = "/home/deploy/mongo_erl/mongo_notification/priv/apns-key.pem",
   	Options = [{certfile, Cert}, {keyfile, Key}, {mode, binary}, {verify, verify_none}, {active, true}],
   	Timeout = 10000,
 	try
